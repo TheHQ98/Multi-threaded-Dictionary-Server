@@ -1,0 +1,15 @@
+{
+  "dictionary" : [ {
+    "word" : "apple",
+    "meanings" : [ "a round fruit with firm", "white flesh and a green" ]
+  }, {
+    "word" : "book",
+    "meanings" : [ "one of the parts that a very long book" ]
+  }, {
+    "word" : "car",
+    "meanings" : [ "a road vehicle with an engine", "four wheels" ]
+  }, {
+    "word" : "test",
+    "meanings" : [ "1", "2" ]
+  } ]
+}
