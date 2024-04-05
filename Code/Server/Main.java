@@ -31,9 +31,6 @@ public class Main {
             return;
         }
 
-        System.out.println(Params.PORT_NUM + port);
-        System.out.println(Params.FILE_ADDRESS + args[1]);
-
         // load file
         dictionary = new Dictionary(args[1]);
 
@@ -68,7 +65,7 @@ public class Main {
         }
         catch (IOException e)
         {
-            e.printStackTrace();
+            System.out.println("Server error: " + e.getMessage());
         }
     }
 

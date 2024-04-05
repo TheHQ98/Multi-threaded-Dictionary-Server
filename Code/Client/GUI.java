@@ -75,7 +75,7 @@ public class GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // check input
-                String word = textField.getText();
+                String word = textField.getText().trim();
                 if (word.isEmpty()) {
                     textArea.setText(Params.INVALID_INPUT);
                     return;
@@ -84,7 +84,8 @@ public class GUI {
                 // try to connect to the server
                 clientServer.connect();
                 if (!clientServer.checkServer()) {
-                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT);
+                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT,
+                            "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
@@ -137,7 +138,7 @@ public class GUI {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String addWord = wordTextField.getText();
+                String addWord = wordTextField.getText().trim();
                 String addMeaning = correctMeanings(meaningTextArea.getText());
 
                 // check if it is valid
@@ -149,7 +150,8 @@ public class GUI {
                 // try to connect to the server
                 clientServer.connect();
                 if (!clientServer.checkServer()) {
-                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT);
+                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT,
+                            "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
@@ -192,7 +194,7 @@ public class GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // check input if it is valid
-                String word = textField.getText();
+                String word = textField.getText().trim();
                 if (word.isEmpty()) {
                     textArea.setText(Params.INVALID_INPUT);
                     return;
@@ -201,7 +203,8 @@ public class GUI {
                 // try to connect to the server
                 clientServer.connect();
                 if (!clientServer.checkServer()) {
-                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT);
+                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT,
+                            "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
@@ -254,7 +257,7 @@ public class GUI {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String updateWord = wordTextField.getText();
+                String updateWord = wordTextField.getText().trim();
                 String updateMeaning = correctMeanings(meaningTextArea.getText());
 
                 // check input if it is valid
@@ -266,7 +269,8 @@ public class GUI {
                 // try to connect to the server
                 clientServer.connect();
                 if (!clientServer.checkServer()) {
-                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT);
+                    JOptionPane.showMessageDialog(mainPanel, Params.UNABLE_CONNECT,
+                            "Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 

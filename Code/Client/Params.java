@@ -15,5 +15,6 @@ public class Params {
     public static final String REMOVE = "Remove";
     public static final String UPDATE = "Update";
     public static final String INVALID_INPUT = "Invalid Input";
-    public static final String UNABLE_CONNECT = "Unable to connect to server.";
+    public static final String UNABLE_CONNECT = "Unable to connect to server." +
+            " Server may not started or server-address/server-port may wrong";
 }

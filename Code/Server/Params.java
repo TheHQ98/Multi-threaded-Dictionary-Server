@@ -7,8 +7,6 @@
 
 public class Params {
     public static final String PORT_ERROR = "Port number must be an integer: ";
-    public static final String PORT_NUM = "Port number: ";
-    public static final String FILE_ADDRESS = "File address: ";
     public static final String SERVER_START = "Server started.";
     public static final String ARGS_ERROR = "Argument format not correct: <port> <dictionary-file>";
     public static final String FILE_FORMAT = ".json";
